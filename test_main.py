@@ -27,7 +27,7 @@ def test_health(client):
     assert response.status_code == 200
     assert response.json == 'Healthy'
     # This assertion will always fail
-    assert False, "Forcing the test to fail"
+    #assert False, "Forcing the test to fail"
 
 def test_auth(client):
     body = {'email': EMAIL,
